@@ -1,14 +1,13 @@
 import { FC } from "react"
 import { Container, Row, Col } from "react-bootstrap";
+import Banner from "../components/Banner";
 
 const Main: FC = () => {
     return (
         <div>
-            <div>
-                <div>Колонка 1</div>
-                <div>Колонка 2</div>
-                <div>Колонка 3</div>
-            </div>
+            <section>
+                <Banner dataPeriod='1000' />
+            </section>
         </div>
     )
 }
