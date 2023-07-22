@@ -3,13 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Main: FC = () => {
     return (
-        <Container>
-            <Row>
-                <Col>Колонка 1</Col>
-                <Col>Колонка 2</Col>
-                <Col>Колонка 3</Col>
-            </Row>
-        </Container>
+        <div>
+            <div>
+                <div>Колонка 1</div>
+                <div>Колонка 2</div>
+                <div>Колонка 3</div>
+            </div>
+        </div>
     )
 }
 

@@ -25,23 +25,14 @@ type Routes = {
 
 export const routes: Routes = {
     publicRoutes: [
-        {path: "/", element: Main},
-        {path: "/about", element: About},
-        {path: "/articles", element: Articles},
-        {path: "/skills", element: Skills},
-        {path: "/portfolio", element: Portfolio},
+        {path: "#home", element: Main},
+        {path: "#about", element: About},
+        {path: "#articles", element: Articles},
+        {path: "#skills", element: Skills},
+        {path: "#portfolio", element: Portfolio},
     ],
-    privateRoutes: [],
+    privateRoutes: [
+        {path: "/users", element: Users},
+    ],
     '': NotFoundPage()
 }
-
-// export const publicRoutes = [
-//     {path: "/", element: Main},
-//     {path: "/about", element: About},
-//     {path: "/articles", element: Articles},
-//     {path: "/shop", element: Shop},
-// ]
-
-export const privateRoutes = [
-    {path: "/users", element: Users},
-]

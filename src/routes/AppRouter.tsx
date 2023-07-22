@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate, Route, Routes } from "react-router";
-import { routes, privateRoutes } from './main'
+import { routes } from './main'
 
 const AppRouter = () => {
     const [isAuth, setIsAuth] = React.useState(false);
