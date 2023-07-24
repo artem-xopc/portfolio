@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Banner from '../components/Banner';
