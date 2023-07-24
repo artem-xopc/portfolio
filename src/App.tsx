@@ -4,6 +4,7 @@ import NavBar from './components/NavbarComponents/NavBar';
 import AppRouter from './routes/AppRouter';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Portfolio />
       <AppRouter />
     </div>
   );

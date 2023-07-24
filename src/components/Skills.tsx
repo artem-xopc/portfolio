@@ -27,15 +27,15 @@ const Skills = () => {
       <Container>
         <Row>
           <Col className={styles.skill_bx}>
-            <div>
+            <div className={styles.skill_bx_inside}>
               <h2>Skills</h2>
               <p>
-                Опыт работы: 1.5 года. Компания Yakha Consalting, должность: Frontend Developer{' '}
-                {'(Junior -> Junior+/Middle)'}. За время работы выполнял:
+                Опыт работы: 1.5 года. Компания: Yakha Consalting. Должность: Frontend Developer{' '}
+                {'(Junior -> Junior+/Middle)'}. За время работы занимался:
               </p>
               <ul>
                 <li>
-                  разработкой web приложение на React, Redux Toolkit и TypeScript для строительной
+                  разработкой web приложения на React, Redux Toolkit и TypeScript для строительной
                   компании, которое предназначалось для управления строительными бригадами,
                   управления проектами и построением целей сотрудников компании;
                 </li>
