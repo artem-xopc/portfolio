@@ -5,6 +5,8 @@ import AppRouter from './routes/AppRouter';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Banner />
       <Skills />
       <Portfolio />
+      <Contact />
+      <Footer />
       <AppRouter />
     </div>
   );

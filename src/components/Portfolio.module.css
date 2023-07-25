@@ -99,14 +99,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px 20px;
 }
 .proj_imgbx {
   position: relative;
-  max-width: 100%;
+  max-width: 380px;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
 }
 .proj_imgbx::before {
   content: '';

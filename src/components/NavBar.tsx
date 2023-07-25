@@ -89,13 +89,11 @@ const NavBar = () => {
                   </Nav.Link>
                 </div>
               </div>
-
-              {/* <Link to={'/'}><img src={logo} style={{ width: '200px', marginLeft: '50px' }} /></Link> */}
             </div>
           ) : (
             <div className={styles.links_wrapper}>
               <Nav.Link href={'#home'}>
-                <img src={logo} alt="logo" style={{ width: '200px' }} />
+                <img src={logo} alt="logo" style={{ width: '200px', marginRight: '50px' }} />
               </Nav.Link>
 
               <Nav.Link

@@ -1,23 +1,25 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
 import styles from './Portfolio.module.css';
 
 interface ProsectCardProps {
   title: string;
   description: string;
   imgUrl: string;
+  link: string;
 }
 
-export const ProjectCard: React.FC<ProsectCardProps> = ({ title, description, imgUrl }) => {
+export const ProjectCard: React.FC<ProsectCardProps> = ({ title, description, imgUrl, link }) => {
   return (
-    <Col size={12} sm={6} md={4} className={styles.card_wrapper}>
+    <div className={styles.card_wrapper}>
       <div className={styles.proj_imgbx}>
-        <img src={imgUrl} />
+        <img src={imgUrl} alt="Project preview" />
         <div className={styles.proj_txtx}>
-          <h4>{title}</h4>
-          <span>{description}</span>
+          <a href={link} target="_blank" rel="noreferrer" style={{ color: '#fff' }}>
+            <h4>{title}</h4>
+            <span>{description}</span>
+          </a>
         </div>
       </div>
-    </Col>
+    </div>
   );
 };
