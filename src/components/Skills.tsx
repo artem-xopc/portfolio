@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import styles from './Skills.module.css';
 
 const Skills = () => {
@@ -31,8 +31,9 @@ const Skills = () => {
               <h2>Skills</h2>
               <p>
                 Опыт работы: 1.5 года. Компания: Yakha Consalting. Должность: Frontend Developer{' '}
-                {'(Junior -> Junior+/Middle)'}. За время работы занимался:
+                {'(Junior -> Middle)'}.
               </p>
+              <p>За время работы в компании занимался:</p>
               <ul>
                 <li>
                   разработкой web приложения на React, Redux Toolkit и TypeScript для строительной

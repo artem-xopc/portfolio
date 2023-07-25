@@ -10,7 +10,7 @@ interface ProsectCardProps {
 
 export const ProjectCard: React.FC<ProsectCardProps> = ({ title, description, imgUrl }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col size={12} sm={6} md={4} className={styles.card_wrapper}>
       <div className={styles.proj_imgbx}>
         <img src={imgUrl} />
         <div className={styles.proj_txtx}>

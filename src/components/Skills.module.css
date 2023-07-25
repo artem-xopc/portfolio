@@ -37,8 +37,6 @@
   flex-direction: column;
   max-width: 700px;
   text-align: left;
-  /* justify-content: center; */
-  /* align-self: center; */
   margin: auto;
 }
 .skill_slider {
@@ -66,7 +64,4 @@
     font-size: 14px;
     list-style-type: none;
   }
-  /* .skill li {
-    font-size: 14px;
-  } */
 }

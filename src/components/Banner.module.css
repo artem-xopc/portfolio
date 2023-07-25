@@ -71,19 +71,30 @@
   padding: 5px;
   border: 3px solid #00e5ff;
   border-radius: 50%;
-  animation: updown 3s linear infinite;
+  animation: glitch-lines 5s infinite;
 }
-@keyframes updown {
+
+@keyframes glitch-lines {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(0);
   }
-  50% {
-    transform: translateY(10px);
+  20% {
+    transform: translateY(-3px);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(3px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(0);
   }
 }
+
 .txt_rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -138,4 +149,10 @@
   .about {
     max-width: 350px;
   }
+}
+
+.card_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

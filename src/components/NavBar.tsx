@@ -1,16 +1,14 @@
-import React, { Fragment } from 'react';
-import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
+import React from 'react';
+import { Nav } from 'react-bootstrap';
 import styles from './NavBar.module.css';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
-import menu from '../../assets/icons/menu_white.png';
-import main from '../../assets/icons/main.png';
-import about from '../../assets/icons/about_color.png';
-import skills from '../../assets/icons/skills_color.png';
-import portfolio from '../../assets/icons/projects.png';
-import vk from '../../assets/icons/vk.png';
-import telegram from '../../assets/icons/telegram.png';
-import inst from '../../assets/icons/instagram.png';
+import logo from '../assets/logo.png';
+import menu from '../assets/icons/menu_white.png';
+import main from '../assets/icons/main.png';
+import skills from '../assets/icons/skills_color.png';
+import portfolio from '../assets/icons/projects.png';
+import vk from '../assets/icons/vk.png';
+import telegram from '../assets/icons/telegram.png';
+import inst from '../assets/icons/instagram.png';
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = React.useState('/');
@@ -114,13 +112,13 @@ const NavBar = () => {
               >
                 Навыки
               </Nav.Link>
-              <Link
-                to={'#portfolio'}
+              <Nav.Link
+                href={'#portfolio'}
                 className={styles.links_item}
                 onClick={() => onUpdateActiveLink('portfolio')}
               >
                 Портфолио
-              </Link>
+              </Nav.Link>
             </div>
           )}
         </div>
@@ -130,7 +128,7 @@ const NavBar = () => {
               <a href="#">
                 <img src={vk} alt="ВКонтакте" />
               </a>
-              <a href="#">
+              <a href="https://t.me/artem_xopc">
                 <img src={telegram} alt="Телеграм" />
               </a>
               <a href="#">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavbarComponents/NavBar';
+import NavBar from './components/NavBar';
 import AppRouter from './routes/AppRouter';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
