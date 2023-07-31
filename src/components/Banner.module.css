@@ -15,7 +15,7 @@
 
 @media (max-width: 2000px) {
   .banner p {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 10px;
   }
@@ -108,9 +108,10 @@
   margin-right: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 703px) {
   .banner {
     display: flex;
+    background-image: url(../assets/images/cyber-bg4.jpg);
     font-size: 10px;
     flex-direction: column;
     justify-content: center;
@@ -128,7 +129,11 @@
     justify-content: center;
     align-items: center;
     max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
   }
+
   .banner .tagline {
     font-size: 15px;
   }

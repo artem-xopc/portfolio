@@ -98,3 +98,15 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 703px) {
+  .contact {
+    padding: 10px;
+  }
+  .contact img {
+    display: none;
+  }
+  .contact h2 {
+    font-size: 34px;
+  }
+}

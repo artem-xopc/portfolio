@@ -62,7 +62,6 @@ const Banner = () => {
               <span className={styles.wrap}>{text}</span>
             </span>
           </h1>
-          <h1></h1>
         </div>
         <div className={styles.about}>
           <p>
@@ -77,12 +76,6 @@ const Banner = () => {
             </a>
             .
           </p>
-          {/* <p>Основная информация:</p>
-          <p>JavaScript программист</p>
-          <p>Возраст: 22 года</p>
-          <p>Пол: мужской</p>
-          <p>Страна проживания: Россия</p>
-          <p>Интересуемая занятость: полная</p> */}
         </div>
       </div>
       <div className={styles.avatar}>

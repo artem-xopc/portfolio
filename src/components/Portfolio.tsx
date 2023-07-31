@@ -4,6 +4,11 @@ import styles from './Portfolio.module.css';
 import projImg1 from '../assets/images/portfolio/project-img1.png';
 import projImg2 from '../assets/images/portfolio/project-img2.png';
 import projImg3 from '../assets/images/portfolio/project-img3.png';
+import projImg4 from '../assets/images/portfolio/project-img4.png';
+import projImg5 from '../assets/images/portfolio/project-img5.png';
+import projImg6 from '../assets/images/portfolio/project-img6.png';
+import projImg7 from '../assets/images/portfolio/project-img7.png';
+import projImg10 from '../assets/images/portfolio/project-img10.png';
 import { ProjectCard } from './PorjectCard';
 
 const Portfolio = () => {
@@ -13,7 +18,7 @@ const Portfolio = () => {
       title: 'Oculus Meta 2',
       description: 'Design & Development',
       imgUrl: projImg1,
-      link: 'https://github.com/artem-xopc/oculus-mate-2',
+      link: 'https://artem-xopc.github.io/oculus-mate-2/',
     },
     {
       title: 'Music Platform',
@@ -28,62 +33,36 @@ const Portfolio = () => {
       link: 'https://github.com/artem-xopc',
     },
   ];
-  const g_projects = [
-    {
-      title: 'Game Of Life',
-      description: 'Development',
-      imgUrl: projImg1,
-      link: 'https://github.com/artem-xopc',
-    },
-    {
-      title: 'Tetris',
-      description: 'Development',
-      imgUrl: projImg2,
-      link: 'https://github.com/artem-xopc',
-    },
-    {
-      title: 'Chess',
-      description: 'Development',
-      imgUrl: projImg3,
-      link: 'https://github.com/artem-xopc',
-    },
-  ];
   const o_projects = [
     {
       title: 'Color Palette',
       description: 'Development',
-      imgUrl: projImg1,
-      link: 'https://github.com/artem-xopc',
+      imgUrl: projImg4,
+      link: 'https://artem-xopc.github.io/Change-Color-By-Artem-Xopc/',
     },
     {
       title: 'About my Book',
       description: 'Design & Development',
-      imgUrl: projImg2,
-      link: 'https://github.com/artem-xopc',
+      imgUrl: projImg5,
+      link: 'https://artem-xopc.github.io/about-my-book/',
+    },
+    {
+      title: 'Food Table',
+      description: 'Design & Development',
+      imgUrl: projImg7,
+      link: 'https://artem-xopc.github.io/food-table/',
     },
     {
       title: 'Calculator',
       description: 'Design & Development',
-      imgUrl: projImg3,
-      link: 'https://github.com/artem-xopc',
+      imgUrl: projImg6,
+      link: 'https://artem-xopc.github.io/JScalculator/',
     },
     {
-      title: 'Stellar Scroll',
-      description: 'Design & Development',
-      imgUrl: projImg1,
-      link: 'https://github.com/artem-xopc',
-    },
-    {
-      title: 'Witcher Parallax',
-      description: 'Design & Development',
-      imgUrl: projImg2,
-      link: 'https://github.com/artem-xopc',
-    },
-    {
-      title: 'Stapwatch',
+      title: 'Chess',
       description: 'Development',
-      imgUrl: projImg3,
-      link: 'https://github.com/artem-xopc',
+      imgUrl: projImg10,
+      link: 'https://artem-xopc.github.io/chess/',
     },
   ];
 
@@ -107,13 +86,6 @@ const Portfolio = () => {
                     Business
                   </Nav.Link>
                   <Nav.Link
-                    href={'#portfolio/games'}
-                    className={styles.nav_link}
-                    onClick={() => onUpdateActiveItem('games')}
-                  >
-                    Games
-                  </Nav.Link>
-                  <Nav.Link
                     href={'#portfolio/other'}
                     className={styles.nav_link}
                     onClick={() => onUpdateActiveItem('other')}
@@ -124,7 +96,6 @@ const Portfolio = () => {
                 <div>
                   {activeItem === 'business' && (
                     <div>
-                      <p>Здесь представлены бизнес-проекты, над которыми я работал</p>
                       <div className={styles.proj_wrapper}>
                         {b_projects.map((project, index) => (
                           <ProjectCard key={index} {...project} />
@@ -132,19 +103,8 @@ const Portfolio = () => {
                       </div>
                     </div>
                   )}
-                  {activeItem === 'games' && (
-                    <div>
-                      <p>Здесь представлены проекты-игры, над которыми я работал</p>
-                      <div className={styles.proj_wrapper}>
-                        {g_projects.map((project, index) => (
-                          <ProjectCard key={index} {...project} />
-                        ))}
-                      </div>
-                    </div>
-                  )}
                   {activeItem === 'other' && (
                     <div>
-                      <p>Здесь представлены остальные мои проекты</p>
                       <div className={styles.proj_wrapper}>
                         {o_projects.map((project, index) => (
                           <ProjectCard key={index} {...project} />

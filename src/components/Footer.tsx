@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.box}>
-        <Nav.Link href={'#home'}>
+        {/* <Nav.Link href={'#home'}>
           <img src={logo} alt="logo" style={{ width: '200px' }} />
-        </Nav.Link>
+        </Nav.Link> */}
         <div className={styles.social_wrapper}>
           <div className={stylesNav.social_icon}>
             <a href="#">
