@@ -10,9 +10,11 @@ import projImg6 from '../assets/images/portfolio/project-img6.png';
 import projImg7 from '../assets/images/portfolio/project-img7.png';
 import projImg10 from '../assets/images/portfolio/project-img10.png';
 import { ProjectCard } from './PorjectCard';
+import { Loader } from './UI/Loader';
 
 const Portfolio = () => {
   const [activeItem, setActiveItem] = React.useState('business');
+  const [isLoading, setIsLoading] = React.useState(false);
   const b_projects = [
     {
       title: 'Oculus Meta 2',
@@ -20,18 +22,18 @@ const Portfolio = () => {
       imgUrl: projImg1,
       link: 'https://artem-xopc.github.io/oculus-mate-2/',
     },
-    {
-      title: 'Music Platform',
-      description: 'Design & Development',
-      imgUrl: projImg2,
-      link: 'https://github.com/artem-xopc',
-    },
-    {
-      title: 'CoinFuse',
-      description: 'Design & Development',
-      imgUrl: projImg3,
-      link: 'https://github.com/artem-xopc',
-    },
+    // {
+    //   title: 'Music Platform',
+    //   description: 'Design & Development',
+    //   imgUrl: projImg2,
+    //   link: 'https://github.com/artem-xopc',
+    // },
+    // {
+    //   title: 'CoinFuse',
+    //   description: 'Design & Development',
+    //   imgUrl: projImg3,
+    //   link: 'https://github.com/artem-xopc',
+    // },
   ];
   const o_projects = [
     {
@@ -67,15 +69,18 @@ const Portfolio = () => {
   ];
 
   const onUpdateActiveItem = (value: string) => {
+    if (isLoading === false) setIsLoading(true);
     setActiveItem(value);
+    setIsLoading(false);
   };
+
   return (
     <section className={styles.project} id="portfolio">
       <Container>
         <Row>
           <Col size={12}>
             <div className={styles.portfolio_wrapper}>
-              <h2 style={{ marginBottom: '20px' }}>Projects</h2>
+              <h2 style={{ marginBottom: '20px' }}>Проекты</h2>
               <div>
                 <Nav className={styles.nav_pills}>
                   <Nav.Link
@@ -93,6 +98,7 @@ const Portfolio = () => {
                     Other
                   </Nav.Link>
                 </Nav>
+                {isLoading ? <Loader /> : (
                 <div>
                   {activeItem === 'business' && (
                     <div>
@@ -113,6 +119,7 @@ const Portfolio = () => {
                     </div>
                   )}
                 </div>
+                )}
               </div>
             </div>
           </Col>

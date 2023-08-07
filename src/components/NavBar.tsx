@@ -5,10 +5,8 @@ import logo from '../assets/logo.png';
 import menu from '../assets/icons/menu_white.png';
 import main from '../assets/icons/main.png';
 import skills from '../assets/icons/skills_color.png';
+import SocialIcons from './UI/SocialIcons';
 import portfolio from '../assets/icons/projects.png';
-import vk from '../assets/icons/vk.png';
-import telegram from '../assets/icons/telegram.png';
-import inst from '../assets/icons/instagram.png';
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = React.useState('/');
@@ -123,15 +121,7 @@ const NavBar = () => {
         <div>
           <div className={styles.log_button}>
             <div className={styles.social_icon}>
-              <a href="#">
-                <img src={vk} alt="ВКонтакте" />
-              </a>
-              <a href="https://t.me/artem_xopc">
-                <img src={telegram} alt="Телеграм" />
-              </a>
-              <a href="#">
-                <img src={inst} alt="Инстраграм" />
-              </a>
+              <SocialIcons />
             </div>
             <a href="https://t.me/artem_xopc" className={styles.log_but}>
               Let's Connect
