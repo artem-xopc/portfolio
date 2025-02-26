@@ -7,14 +7,14 @@ import styles from "./SocialIcons.module.css";
 const SocialIcons = () => {
   return (
     <div className={styles.social_icon}>
-      <a href="https://vk.com/artem_xopc" target="_blank" rel="noreferrer">
+      <a href="https://vk.com/romanov__artem" target="_blank" rel="noreferrer">
         <img src={vk} alt="ВКонтакте" />
       </a>
-      <a href="https://t.me/artem_xopc" target="_blank" rel="noreferrer">
+      <a href="https://t.me/RomanovArtem" target="_blank" rel="noreferrer">
         <img src={telegram} alt="Телеграм" />
       </a>
       <a href="https://github.com/artem-xopc" target="_blank" rel="noreferrer">
-        <img src={github} alt="Инстраграм" />
+        <img src={github} alt="GitHub" />
       </a>
     </div>
   );
