@@ -15,7 +15,7 @@ const Contact = () => {
       <div>
         <span>
           <h2>Останемся на связи</h2>
-          <a href="https://t.me/artem_xopc" target="_blank" rel="noreferrer">
+          <a href="https://t.me/RomanovArtem" target="_blank" rel="noreferrer">
             <button>
               <span>{buttonText}</span>
             </button>
