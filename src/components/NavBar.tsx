@@ -91,7 +91,7 @@ const NavBar = () => {
           ) : (
             <div className={styles.links_wrapper}>
               <Nav.Link href={'#home'}>
-                <img src={logo} alt="logo" style={{ width: '200px', marginRight: '50px' }} />
+                 {/* <img src={logo} alt="logo" style={{ width: '200px', marginRight: '50px' }} /> */}
               </Nav.Link>
 
               <Nav.Link
