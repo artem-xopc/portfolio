@@ -69,8 +69,7 @@ const Banner = () => {
             технологиями и языками программирования как: JavaScript, TypeScript, React.js, Next.js,
             Redux (и Redux-toolkit), router-dom, Node,js, Nest.js, express.js и другие. Моя цель как
             разработчика – это постоянное развитие профессиональных качеств, приобретение новых
-            знаний и навыков в web разработке. Также занимаюсь фитнесом для поддержания физического
-            здоровья. Ссылка на мой GitHub:{' '}
+            знаний и навыков в web разработке. Ссылка на мой GitHub:{' '}
             <a href="https://github.com/artem-xopc" target="_blank" rel="noreferrer">
               Перейти в профиль
             </a>
