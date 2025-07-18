@@ -40,7 +40,7 @@ const Skills = () => {
                   <h4>Для Backend:</h4> NodeJS, Nest.JS, ExpressJS;
                 </li>
                 <li>
-                  <h4>Базы данных и другие:</h4> MongoDB, система контроля версий Git, работа с REST
+                  <h4>Базы данных и другие:</h4> SQL, MongoDB, система контроля версий Git, работа с REST
                   API, работа с Postman;
                 </li>
                 <li>
