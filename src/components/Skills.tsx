@@ -11,8 +11,7 @@ const Skills = () => {
             <div className={styles.skill_bx_inside}>
               <h2>Навыки</h2>
               <p>
-                Опыт работы: 1.5 года. Компания: Yakha Consalting. Должность: Frontend Developer{' '}
-                {'(Junior -> Middle)'}.
+                Опыт работы: >года. Компания: Стартап EdTech «University Schedule». Должность: Frontend Developer.
               </p>
               <p>За время работы в компании занимался:</p>
               <ul>
